@@ -27,9 +27,9 @@ const AxiosPage = () => {
             <h1 className="text-center text-2xl">Axios da Gizney</h1>
             <Suspense  fallback={<div>Carregando...</div>}>
             {data.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="w-[220px] border-2 border-black rounded-lg shadow-xl m-4 p-4 bg-white text-center ">
                     <h2>{item.name}</h2>
-                    <Image className="bo" src={item.imageUrl} alt={item.name} width={200} height={200}/>
+                    <Image className="flex flex-row" src={item.imageUrl} alt={item.name} width={200} height={200}/>
                     <p>{item.films}</p>
                     <p>{item.tvShows}</p>
                     <p>{item.videoGames}</p>

@@ -9,15 +9,15 @@ interface menuProps {
 
 }
 
-const Menu = ({op1,op2,op3,op4}: menuProps) => {
+const Menu = ({op1, op2, op3, op4}: menuProps) => {
     return(
         <>
-        <header>
-            <nav>
-                <Link className="" href={"/"}>{op1}</Link>
-                <Link className="" href={"/hookPage"}>{op2}</Link>
-                <Link className="" href={"/severSide"}>{op3}</Link>
-                <Link className="" href={"/axiosPage"}>{op4}</Link>
+        <header> 
+            <nav className="flex gap-2 bg-neutral-950 text-white ">
+                <Link className="font-black " href={"/"}>{op1}</Link>
+                <Link className="font-black" href={"/hookPage"}>{op2}</Link>
+                <Link className="font-black" href={"/severSide"}>{op3}</Link>
+                <Link className="font-black" href={"/axiosPage"}>{op4}</Link>
             </nav>
         </header>
         </>
